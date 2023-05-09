@@ -10,6 +10,10 @@ JavaScript objects come with built-in [methods](https://developer.mozilla.org/en
 - `Object.values(obj)`: Returns an array of the values of an object.
 - `Object.entries(obj)`: Returns an array of key-value pairs of an object.
 
+## Exercises
+
+
+
 ## Understanding the `this` Keyword in JavaScript Objects
 
 In JavaScript, the `this` keyword refers to the current object and is a powerful tool for accessing and manipulating object properties and methods. It allows you to refer to the context in which a function is executed. Understanding how `this` works is essential for working effectively with objects in JavaScript.
