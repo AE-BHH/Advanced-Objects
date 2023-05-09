@@ -12,7 +12,25 @@ JavaScript objects come with built-in [methods](https://developer.mozilla.org/en
 
 ## Group Activity
 
-explore
+In this exercise, you will explore the MDN (Mozilla Developer Network) documentation for object methods in JavaScript. Follow these steps:
+
+- Visit the [MDN website](https://developer.mozilla.org/).
+
+- Search for "Object methods" and click on the "Object" link in the search results.
+
+- Explore the list of object methods provided.
+
+- Choose an interesting method and read its description, syntax, and usage examples.
+
+- Prepare a presentation highlighting the method's name, functionality, syntax, and examples.
+
+- Practice your presentation to ensure clarity.
+
+- Present your findings to the class, encouraging questions and discussions.
+
+- Take notes during other students' presentations to expand your knowledge.
+
+By completing this exercise, you'll become familiar with using MDN documentation and deepen your understanding of JavaScript object methods.
 
 ## Understanding the `this` Keyword in JavaScript Objects
 
