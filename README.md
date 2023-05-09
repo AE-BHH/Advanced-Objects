@@ -107,15 +107,38 @@ This difference is important to keep in mind because it affects how we access an
 Follow the instructions in [rocket.js](./exercises/rocket.js)
 
 
-## Destructured Assignment
+## Destructuring Objects in JavaScript
 
-Destructured assignment is a convenient feature in JavaScript that allows us to extract values from objects and arrays and assign them to variables in a single line of code. It provides a concise way to access and work with specific properties of an object without having to access them one by one.
+In JavaScript, object destructuring is a convenient way to extract individual properties from an object and assign them to variables. It provides a concise syntax for accessing and working with object properties.
+
+To destructure an object, you use the following syntax:
+
+![Syntax example](https://www.freecodecamp.org/news/content/images/2021/02/destructure.png)
+
+Here, `name` is the property you want to extract from `user`. You can provide multiple property names separated by commas.
+
+Consider the following object:
 
 ```javascript
-// Example of destructured assignment
-const { name, age, city } = person;
+const person = {
+  name: 'John',
+  age: 30,
+  city: 'New York'
+};
+
 ```
-By using destructured assignment, we can easily extract values from an object and assign them to variables with meaningful names.
+If you want to extract the `name` and `age` properties from the `person` object, you can use object destructuring as follows:
+
+```js
+const { name, age } = person;
+console.log(name);  // Output: John
+console.log(age);   // Output: 30
+
+```
+
+In this example, we created two variables `name` and `age` and assigned them the values of the corresponding properties from the `person` object. Now, you can directly use `name` and `age` variables instead of `person.name` and `person.age`.
+
+
 
 ---
 
