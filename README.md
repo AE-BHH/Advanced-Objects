@@ -102,6 +102,9 @@ To summarize, regular functions have their own `"this"` value determined by the 
 
 This difference is important to keep in mind because it affects how we access and use the "this" keyword in different contexts. Regular functions and arrow functions behave differently in terms of how they handle the `"this"` keyword.
 
+## Exercises
+
+Follow the instructions in [rocket.js](./exercises/rocket.js)
 
 
 ## Destructured Assignment
