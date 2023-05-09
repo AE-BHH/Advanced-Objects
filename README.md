@@ -10,6 +10,38 @@ JavaScript objects come with built-in [methods](https://developer.mozilla.org/en
 - `Object.values(obj)`: Returns an array of the values of an object.
 - `Object.entries(obj)`: Returns an array of key-value pairs of an object.
 
+## Understanding the `this` Keyword in JavaScript Objects
+
+In JavaScript, the `this` keyword refers to the current object and is a powerful tool for accessing and manipulating object properties and methods. It allows you to refer to the context in which a function is executed. Understanding how `this` works is essential for working effectively with objects in JavaScript.
+Let's explore this example to better understand how `this` works:
+
+```javascript
+const person = {
+  name: 'John',
+  greet: function() {
+    console.log(`Hello, ${this.name}!`);
+  }
+};
+person.greet();     // Output: Hello, John!
+```
+
+## Exercises
+
+Follow the instructions in [robot.js](./exercises/robot.js)
+
+## The Basics of `this`
+
+The value of `this` depends on how a function is called. It can have different meanings in different situations:
+
+- **Global Context**: When `this` is used outside of any function or object, it refers to the global object. In web browsers, the global object is the `window` object.
+
+- **Method Invocation**: When a function is called as a method of an object, `this` refers to the object on which the method is being called.
+
+- **Constructor Invocation**: When a function is used as a constructor function with the `new` keyword, `this` refers to the newly created instance.
+
+- **Explicit Binding**: The `this` keyword can be explicitly set using methods like `call()`, `apply()`, or `bind()`, which allow you to specify the object that should be bound to `this` within a function.
+
+
 ## "this" Keyword and Arrow Functions
 
 When it comes to arrow functions, the behavior of the `"this"` keyword is a bit different. Arrow functions do not have their own `"this"` value. Instead, they inherit the value of `"this"` from the surrounding scope, which is the context in which the arrow function is defined.
