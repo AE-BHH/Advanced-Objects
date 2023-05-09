@@ -10,9 +10,9 @@ JavaScript objects come with built-in [methods](https://developer.mozilla.org/en
 - `Object.values(obj)`: Returns an array of the values of an object.
 - `Object.entries(obj)`: Returns an array of key-value pairs of an object.
 
-## Exercises
+## Group Activity
 
-
+explore
 
 ## Understanding the `this` Keyword in JavaScript Objects
 
