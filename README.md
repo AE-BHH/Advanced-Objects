@@ -12,7 +12,43 @@ JavaScript objects come with built-in [methods](https://developer.mozilla.org/en
 
 ## "this" Keyword and Arrow Functions
 
-The "this" keyword is a special keyword in JavaScript that refers to the object it belongs to. It allows us to access and manipulate object properties and methods within the object's context. However, when using arrow functions, the "this" keyword behaves differently. Arrow functions do not bind their own "this" value and instead inherit it from the surrounding scope.
+When it comes to arrow functions, the behavior of the `"this"` keyword is a bit different. Arrow functions do not have their own `"this"` value. Instead, they inherit the value of `"this"` from the surrounding scope, which is the context in which the arrow function is defined.
+
+To put it simply, when we use the `"this"` keyword inside a regular function, it refers to the object that the function is being called on. But when we use the `"this"` keyword inside an arrow function, it will not have its own `"this"` value and will instead inherit it from the surrounding scope.
+
+Lets see how it works:
+```js
+// Regular Function
+const person = {
+  name: "John",
+  age: 30,
+  greet: function() {
+    console.log("Hello, my name is " + this.name);
+  }
+};
+
+person.greet(); // Output: Hello, my name is John
+
+// Arrow Function
+const person = {
+  name: "John",
+  age: 30,
+  greet: () => {
+    console.log("Hello, my name is " + this.name);
+  }
+};
+
+person.greet(); // Output: Hello, my name is undefined
+```
+In the first example, the `greet()` function inside the `person` object uses the `"this"` keyword, which refers to the `person` object itself. So, when calling `person.greet()`, it correctly outputs the person's name.
+
+In the second example, the `greet()` function is defined as an arrow function. Arrow functions do not bind their own `"this"` value and instead inherit it from the surrounding scope, which is the `global` scope in this case. As a result, accessing `this.name` inside the arrow function returns `undefined`.
+
+To summarize, regular functions have their own `"this"` value determined by the object they belong to, while arrow functions inherit the `"this"` value from the surrounding scope.
+
+This difference is important to keep in mind because it affects how we access and use the "this" keyword in different contexts. Regular functions and arrow functions behave differently in terms of how they handle the `"this"` keyword.
+
+
 
 ## Destructured Assignment
 
