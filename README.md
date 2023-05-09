@@ -4,7 +4,7 @@ In this class, we will explore some advanced concepts related to JavaScript obje
 
 ## Built-in Object Methods
 
-JavaScript objects come with built-in methods that allow us to perform various operations on objects. These methods provide powerful functionalities for working with objects. Some commonly used built-in methods for objects include:
+JavaScript objects come with built-in [methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) that allow us to perform various operations on objects. These methods provide powerful functionalities for working with objects. Some commonly used built-in methods for objects include:
 
 - `Object.keys(obj)`: Returns an array of the keys of an object.
 - `Object.values(obj)`: Returns an array of the values of an object.
