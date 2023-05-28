@@ -1,0 +1,22 @@
+{
+  "name": "advanced-objects",
+  "version": "1.0.0",
+  "description": "In this class, we will explore some advanced concepts related to JavaScript objects.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/laudsol/Advanced-Objects.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/laudsol/Advanced-Objects/issues"
+  },
+  "homepage": "https://github.com/laudsol/Advanced-Objects#readme",
+  "dependencies": {
+    "jest": "^29.5.0"
+  }
+}
