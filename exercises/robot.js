@@ -1,5 +1,5 @@
 /*
-
+Method contex:
 Let’s create a new object to practice using `this`.
 
 1. Add a property of `model` and assign to it a value of '1E78V2'. Add another property, `energyLevel` and assign to it a value of 100.
@@ -19,3 +19,18 @@ const robot = {
   
   
 }
+
+/*
+
+Binding context:
+Let's try usind the `bind` method with the `this` keyword.
+
+1. Create a new object called `airCraft`.
+
+2.Add a property of `model` and assign to it a value of '3DG67A'. Add another property, `energyLevel` and assign to it a value of 78.
+
+3. Now we want to call the `provideInfo` method that is in the `robot` object and bind it to the `airCraft` object. 
+The output we are expecting is: 'I am 3DG67A and my current energy level is 78.'
+
+
+*/
