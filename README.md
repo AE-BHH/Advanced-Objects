@@ -44,7 +44,7 @@ const person = {
     console.log(`Hello, ${this.name}!`);
   }
 };
-person.greet();     // Output: Hello, John!
+person.greet();     
 ```
 
 ## Exercises
@@ -136,7 +136,7 @@ const person = {
   }
 };
 
-person.greet(); // Output: Hello, my name is John
+person.greet();
 
 // Arrow Function
 const person = {
@@ -147,7 +147,7 @@ const person = {
   }
 };
 
-person.greet(); // Output: Hello, my name is undefined
+person.greet(); 
 ```
 In the first example, the `greet()` function inside the `person` object uses the `"this"` keyword, which refers to the `person` object itself. So, when calling `person.greet()`, it correctly outputs the person's name.
 
