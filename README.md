@@ -53,15 +53,68 @@ Follow the instructions in [robot.js](./exercises/robot.js)
 
 ## The Basics of `this`
 
-The value of `this` depends on how a function is called. It can have different meanings in different situations:
+**The value of `this` depends on how a function is called.** It can have different meanings in different situations:
 
 - **Global Context**: When `this` is used outside of any function or object, it refers to the global object. In web browsers, the global object is the `window` object.
 
+```js
+
+console.log(this) //in the terminal && in browser
+
+function tryThis() {
+	return this
+}
+
+console.log(tryThis())
+```
+
 - **Method Invocation**: When a function is called as a method of an object, `this` refers to the object on which the method is being called.
+
+```js
+function getThis() {
+	return `this is a ${this.name}`
+}
+
+
+const pen = {
+    name: 'pen',
+    getThis
+}
+console.log(pen.getThis())
+
+
+const marker = {
+	name: 'marker',
+	getThis,
+}
+console.log(marker.getThis())
+
+
+const pencil = {
+name: 'pencil'
+}
+
+pencil.identity = getThis
+console.log(pencil.identity())
+
+```
+- **Explicit Binding**: The `this` keyword can be explicitly set using methods like `call()`, `apply()`, or `bind()`, which allow you to specify the object that should be bound to `this` within a function.
+
+```js
+const crayon = {
+    name:'crayon'
+}
+
+const showCrayon = getThis.bind(crayon)
+
+console.log(showCrayon())
+
+getThis.call(crayon)
+```
 
 - **Constructor Invocation**: When a function is used as a constructor function with the `new` keyword, `this` refers to the newly created instance.
 
-- **Explicit Binding**: The `this` keyword can be explicitly set using methods like `call()`, `apply()`, or `bind()`, which allow you to specify the object that should be bound to `this` within a function.
+
 
 
 ## "this" Keyword and Arrow Functions
