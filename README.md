@@ -49,7 +49,7 @@ person.greet();     // Output: Hello, John!
 
 ## Exercises
 
-Follow the instructions in [robot.js](./exercises/robot.js)
+Follow the instructions in [robot.js](./exercises/robot.js) only the Method context.
 
 ## The Basics of `this`
 
@@ -114,7 +114,9 @@ getThis.call(crayon)
 
 - **Constructor Invocation**: When a function is used as a constructor function with the `new` keyword, `this` refers to the newly created instance.
 
+## Exercises
 
+Follow the instructions in [robot.js](./exercises/robot.js) only the Binding context.
 
 
 ## "this" Keyword and Arrow Functions
